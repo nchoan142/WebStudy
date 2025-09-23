@@ -1,0 +1,50 @@
+/* #name-id {
+    color: aqua;
+}
+
+.name-class {
+    color: greenyellow;
+} */
+
+/* các class viết liền nhau */
+/* không dấu space */
+/* .p1-normal.p2-red {
+    color: red;
+} */
+
+/* .parent > p {
+    color: green;
+} */
+
+.children-1 + .children-1 {
+    color: violet !important; 
+}
+
+#name-id {
+    color: red !important;
+}
+
+#name-id {
+    color: blue;
+}
+/* #name-id, div {
+    color: blue;
+} */
+
+:root {
+    --text-color: blue
+}
+
+.name-class {
+    /* sử dụng variable */
+    --text-color: green;
+    color: var(--text-color);
+}
+
+html {
+    font-size: 20px;
+}
+
+* {
+    margin: 0px;
+}

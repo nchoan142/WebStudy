@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>CSS-Selectors</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <h1 id="name-id">NCHoan</h1>
+        <h1 class="name-class">NCHoan</h1>
+        <h1 class="name-class">NCHoan</h1>
+
+        <p class="p1-normal p2-red">Đoạn văn 3</p>
+        <p class="p1-normal p2-red">Đoạn văn 4</p>
+
+        <p class="children-1">Đoạn văn 1 (không parent)</p>
+        <p class="children-2">Đoạn văn 2 (không parent)</p>
+
+        <!-- tất cả thẻ p là con của .parent -->
+        <div class="parent">
+            <!-- nhưng 2 thẻ p này là con trực tiếp của .parent -->
+            <p class="children-1">Đoạn văn 1 (con của .parent)</p>
+            <p class="children-1">Đoạn văn 2 (con của .parent)</p>
+            <p class="children-1">Đoạn văn 2 (con của .parent)</p>
+            <br>
+            <p class="children-1">Đoạn văn 2 (con của .parent)</p>
+            <p class="children-1">Đoạn văn 2 (con của .parent)</p>
+            <p class="children-1">Đoạn văn 2 (con của .parent)</p>
+            <p class="children-1">Đoạn văn 2 (con của .parent)</p>
+            <p class="children-1">Đoạn văn 2 (con của .parent)</p>
+            <p class="children-1">Đoạn văn 2 (con của .parent)</p>
+            <div>
+                <div>
+                    <!-- thẻ p này thì không phải -->
+                    <!-- vì nó đang nằm trong 2 thẻ div lồng nhau -->
+                    <p class="children-1">Đoạn văn 2 (con của .parent)</p>
+                </div>
+            </div>
+        </div>
+ 
+    </body>
+</html>

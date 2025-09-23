@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #f0f0f0;
+}
+
+.gradient-box {
+  width: 400px;
+  height: 200px;
+  padding: 20px;
+  text-align: center;
+  color: white;
+  font-size: 2rem;
+  border-radius: 12px;
+
+  /* background: linear-gradient(45deg, pink, purple); */
+  /* background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet); */
+
+  /* Tham số đầu tiên là hướng kết thúc */
+  /* Trong trường hợp này, sẽ là */
+  /* từ góc trái dưới tới góc phải trên */
+  /* Tham số thứ 2 là màu bắt đầu: red */
+  /* Tham số thứ 3 là màu kết thúc: lightpink */
+  background: linear-gradient(to top right, red, lightpink);
+
+  /* Gradient nền từ xanh dương → tím */
+  /* background: linear-gradient(to right, #3498db, #9b59b6); */
+  
+  /* Đổ bóng cho đẹp */
+  /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); */
+}
