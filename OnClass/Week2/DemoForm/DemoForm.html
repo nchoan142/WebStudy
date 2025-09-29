@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Form Đăng Ký</title>
+</head>
+<body>
+  <h2>Form Đăng Ký</h2>
+
+  <form action="/submit-form" method="post">
+    <!-- Họ tên -->
+    <label for="fullname">Họ và tên:</label><br>
+    <input type="text" id="fullname" name="fullname" placeholder="Nhập họ tên" required><br><br>
+
+    <!-- Email -->
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" placeholder="example@gmail.com" required><br><br>
+
+    <!-- Mật khẩu -->
+    <label for="password">Mật khẩu:</label><br>
+    <input type="password" id="password" name="password" required><br><br>
+
+    <!-- Giới tính -->
+    <label>Giới tính:</label><br>
+    <input type="radio" id="male" name="gender" value="Nam">
+    <label for="male">Nam</label>
+    <input type="radio" id="female" name="gender" value="Nữ">
+    <label for="female">Nữ</label><br><br>
+
+    <!-- Quốc gia -->
+    <label for="country">Quốc gia:</label><br>
+    <select id="country" name="country" required>
+      <option value="">-- Chọn quốc gia --</option>
+      <option value="vn">Việt Nam</option>
+      <option value="us">Hoa Kỳ</option>
+      <option value="jp">Nhật Bản</option>
+    </select><br><br>
+
+    <!-- Ghi chú -->
+    <label for="note">Ghi chú:</label><br>
+    <textarea id="note" name="note" rows="4" cols="40" placeholder="Nhập ghi chú..."></textarea><br><br>
+
+    <!-- Submit -->
+    <button type="submit">Đăng ký</button>
+    <button type="reset">Nhập lại</button>
+  </form>
+</body>
+</html>
