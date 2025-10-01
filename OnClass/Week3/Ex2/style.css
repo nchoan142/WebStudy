@@ -1,0 +1,15 @@
+.artical-1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    text-align: center;
+    text-decoration: underline;
+    color: green;
+    background-color: orange;
+    font-size: 2rem ;
+}
+
+.artical-2 {
+    text-transform: uppercase;
+    background-color: yellow;
+    text-align: right;
+}

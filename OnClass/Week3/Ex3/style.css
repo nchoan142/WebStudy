@@ -1,0 +1,29 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    text-align: center;
+}
+
+h2 {
+    color: orange;
+    background-color: grey;
+    font-size: 2rem;
+    text-decoration: underline;
+}
+
+#saurieng {
+    text-transform: uppercase;
+    text-decoration: overline;
+    font-weight: bold;
+    color: green;
+    border: 5px blue solid;
+    text-align: right;
+}
+
+.cam {
+    text-transform: none;
+    text-indent: 20px;
+    border: 3px dotted red;
+    background-color: pink;
+    color: limegreen
+}

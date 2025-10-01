@@ -8,9 +8,9 @@
 
 /* các class viết liền nhau */
 /* không dấu space */
-/* .p1-normal.p2-red {
+.p1-normal.p2-red {
     color: red;
-} */
+}
 
 /* .parent > p {
     color: green;
