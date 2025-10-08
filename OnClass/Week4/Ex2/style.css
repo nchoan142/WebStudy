@@ -1,0 +1,33 @@
+.image-wrapper {
+  position: relative;
+  width: 200px;
+  height: 200px;
+}
+
+.img {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 100%;
+  transition: opacity 0.3s ease;
+}
+
+.img-2 {
+  opacity: 0;
+}
+
+.image-wrapper .img-1:hover {
+  opacity: 0;
+}
+
+.image-wrapper .img-2:hover {
+  opacity: 1;
+}
+
+/* .img.img-1:hover {
+  opacity: 0;
+}
+
+.img.img-2:hover {
+  opacity: 1;
+} */
