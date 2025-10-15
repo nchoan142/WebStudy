@@ -1,0 +1,46 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 30px;
+  line-height: 1.6;
+}
+
+/* ::first-letter + ::first-line */
+.first-line-demo::first-letter {
+  font-size: 2rem;
+  font-weight: bold;
+  color: darkblue;
+}
+
+.first-line-demo::first-line {
+  color: green;
+  font-weight: bold;
+}
+
+/* ::before + ::after */
+.before-after-demo::before {
+  content: "NCHoan ";
+  color: red;
+}
+
+.before-after-demo::after {
+  content: " ✅";
+  color: green;
+}
+
+/* ::placeholder */
+input::placeholder {
+  color: gray;
+  font-style: italic;
+}
+
+/* ::selection */
+::selection {
+  background-color: yellow;
+  color: black;
+}
+
+/* ::marker */
+ul li::marker {
+  color: rgba(58, 195, 233, 0.9);
+  font-size: 1.2rem;
+}
