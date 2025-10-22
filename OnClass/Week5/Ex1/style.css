@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+.wrapper {
+    width: 800px;
+    margin: 0 auto;
+    font-size: 1.2rem;
+}
+
+.header {
+    width: 800px;
+    height: 140px;
+    background: green;
+}
+
+.content {
+    width: 620px;
+    float: right;
+    background-color: #ff6600;
+}
+
+.main-content {
+    width: 450px;
+    float: left;
+    background-color: #ffd8c3;
+}
+
+.side-bar {
+    width: 150px;
+    float: right;
+}
+
+.main-nav {
+    width: 180px;
+    float: left;
+    background: #339966;
+}
+
+.footer {
+    width: 800px;
+    clear: both;
+    background: green;
+    height: 60px;
+}
