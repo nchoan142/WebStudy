@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ex2</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+        <meta charset="UTF-8">
+    </head>
+    <body bgcolor="orange">
+        <form name="form1" method="post" action="">
+            HoTen:
+            <input type="text" name="txt_name" id="txt_name" onselect="handleSelect()" onfocus="handleFocus()" onblur="handleBlur()">
+            <br>
+            Tuoi:
+            <input type="text" name="txt_age" id="txt_age">
+            <br>
+            <input type="submit" name="btn_check" id="btn_check" value="Check">
+        </form>
+        <form>
+            Enter a number: 
+            <input type="text" size="20" onchange="checkNum(this.value)">
+        </form>
+    </body>
+</html>

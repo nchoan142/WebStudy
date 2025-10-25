@@ -32,3 +32,8 @@
 /* .title-box1 {
     padding: 10px;
 } */
+
+img.avatar {
+  float: left;
+  margin-right: 15px; /* Thêm khoảng cách để chữ không dính vào ảnh */
+}

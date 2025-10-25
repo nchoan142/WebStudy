@@ -1,0 +1,10 @@
+/* Định nghĩa trạng thái "đã bị click" */
+input[type="button"].clicked {
+  background-color: #007BFF; /* Màu xanh dương */
+  color: white;
+}
+
+/* (Tùy chọn) Thêm hiệu ứng :active để người dùng vẫn thấy phản hồi khi nhấn */
+input[type="button"].clicked:active {
+    background-color: #0056b3; /* Màu xanh đậm hơn */
+}
