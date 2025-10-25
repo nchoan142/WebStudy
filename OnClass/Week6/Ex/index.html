@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function checkform() {
+                var hoten = document.forms[0].txtname.value;
+                if(hoten == '') {
+                    alert('Mời bạn nhập họ tên !');
+                    document.forms[0].txtname.focus();
+                    return;
+                }
+
+                var tuoi = document.forms[0].txtage.value;
+                if(tuoi == '') {
+                    alert('Mời bạn nhập tuổi !');
+                    document.forms[0].txtage.focus();
+                    return;
+                }
+
+                if( isNaN(tuoi)) {
+                    alert('Tuổi phải là chữ số !');
+                    document.forms[0].txtage.focus();
+                    return;
+                }
+
+                //kiem tra radio button
+                if(document.forms['frmdangky'].rdogender[0].checked == false && 
+                document.all.rdogender[1].checked == false) {
+                    alert('Mời bạn chọn giới tính !');
+                    document.all.rdogender[0].focus();
+                    return;
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <form name="frmdangky">
+            <table>
+                <tr>
+                    <td>Họ tên:</td>
+                        <td><input type="text" name="txtname" size="30" placeholder="Nhập họ tên" /></td>
+                </tr>
+                <tr>
+                    <td>Tuổi:</td>
+                        <td><input type="text" name="txtage" size="30" placeholder="Nhập tuổi" /></td>
+                </tr>
+                <tr>
+                    <td>Giới tính:</td>
+                        <td><input type="radio" name="rdogender" value="male" />Male
+                        <input type="radio" name="rdogender" value="female" />Female</td>
+                </tr>
+                <tr>
+                    <td>Sở thích:</td>
+                        <td><input type="checkbox" name="chkhobbies" value="tourism"/>Tourism
+                        <input type="checkbox" name="chkhobbies" value="seafood"/>Seafood
+                    <input type="checkbox" name="chkhobbies" value="villa"/>Villa</td>
+                </tr>
+                <tr>
+                        <td align="center" colspan="2">
+                            <input type="button" value="Đăng ký" onclick="checkform()" />
+                            <input type="reset" value="Nhập lại" />
+                        </td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>
