@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Handle JS Event</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <form>
+            Moi ban chon mon chinh:
+            1:
+            <input type="radio" name="radio" value="Mon 1" onclick="alert(value)">Mon 1
+            2:
+            <input type="radio" name="radio" value="Mon 2" onclick="alert(value)">Mon 2
+            3:
+            <input type="radio" name="radio" value="Mon 3" onclick="alert(value)">Mon 3
+        
+            <select onchange="alert(this.value)">
+                <option value="Mon 1"> Mon 1</option>
+                <option value="Mon 2"> Mon 2</option>
+                <option value="Mon 3"> Mon 3</option>
+                <option value="Mon 4"> Mon 4</option>
+                <option value="Mon 5"> Mon 5</option>
+            </select>
+        </form>
+    </body>
+</html>
