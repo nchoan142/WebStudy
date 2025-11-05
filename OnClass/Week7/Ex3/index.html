@@ -3,15 +3,65 @@
     <head>
         <title>Practice Form JS</title>
         <link rel="stylesheet" href="style.css">
-        <script src="script.js"></script>
+        <script src="script1.js" defer></script>
         <meta charset="UTF-8">
     </head>
     <body>
         <h2>Subscription Form</h2>
-        <p>Personal Information</p>
-        Last Name: 
-        <input id="last-name-input" type="text" name="last-name" value="Ho va Ten">
-        First Name: 
-        <input id="first-name-input" type="text" name="first-name" value="Ten">
+        <form name="form_1">
+            
+        </form>
+        <fieldset>
+            <legend>Personal Information</legend>
+            <div class="grid">
+                <label>
+                    First Name: 
+                    <input type="text" name="first_name" value="" placeholder="Tên">
+                </label>
+                <label>
+                    Last Name: 
+                    <input type="text" name="last_name" value="" placeholder="Họ và tên đệm">
+                </label>
+                <div class="radios">
+                    <label><input type="radio" id="male" name="gender" value="Male">Male</label>
+                    <label><input type="radio" id="female" name="gender" value="Female">Female</label>
+                </div>
+                <div class="address">Adress:</div>
+                <textarea name="address" rows="5" cols="40" id="address-text-area" placeholder="Địa chỉ"></textarea>
+
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Magazines subscription for</legend>
+            <div class="box-choices">
+                <label><input type="checkbox" name="choice" value="TIME">TIME</label>
+                <label><input type="checkbox" name="choice" value="Newsweek">Newsweek</label>
+                <label><input type="checkbox" name="choice" value="Sunday">Sunday</label>
+                <label><input type="checkbox" name="choice" value="Vogue">Vogue</label>
+                <label><input type="checkbox" name="choice" value="People">People</label>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Duration</legend>
+            <div class="durations">
+                <label><input type="radio" name="duration" value="1 Year">1 Year</label>
+                <label><input type="radio" name="duration" value="3 Years">3 Years</label>
+                <label><input type="radio" name="duration" value="5 Years">5 Years</label>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Payment options</legend>
+            <div class="payment-options">
+                <label><input type="radio" name="payment_option" value="Demand Draft">Demand Draft</label>
+                <label><input type="radio" name="payment_option" value="Credit Card">Credit Card</label>
+            </div>
+        </fieldset>
+
+        <div class="submit-input">
+            <input type="submit" name="process" value="Process">
+            <input type="submit" name="reset" value="Reset">
+        </div>
     </body>
 </html>

@@ -1,0 +1,67 @@
+:root{
+    --label-w: 110px;
+    --input-w: 220px;
+}
+body{
+    font: 14px/1.4 Arial, Helvetica, sans-serif;
+    padding: 16px;
+}
+fieldset{
+    border: 1px solid #bfbfbf;
+    padding: 14px 16px 18px;
+}
+legend{
+    padding: 0 8px;
+    font-weight: 600;
+}
+
+/* Lưới cho các hàng trong form */
+.grid{
+    display: grid;
+    /* /* Mỗi giá trị ở grid-template-columns là 1 cột trong grid  */
+    /* Ví dụ này có 5 giá trị nên số cột của grid = 5 */
+    grid-template-columns: var(--label-w) var(--input-w) 24px var(--label-w) var(--input-w);
+    align-items: center;
+    row-gap: 14px; /*Khoảng cách giữa các dòng*/
+    column-gap: 10px; /*Khoảng cách giữa các cột*/
+}
+
+label{ white-space: nowrap; }
+
+input[type="text"]{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 4px 6px;
+    border: 1px solid #c7c7c7;
+    height: 22px;
+}
+
+.radios{
+    /* grid-column: <start> / <end> */
+    /* end = số cột của grid + 1 */
+    grid-column: 1 / 6;          
+    display: flex;
+    gap: 28px;
+    align-items: center;
+}
+.radios label{
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.address-label{
+    grid-column: 1 / 6;
+}
+
+textarea{
+    grid-column: 1 / 6;
+    width: calc(var(--label-w) + var(--input-w));
+    max-width: 100%;
+    box-sizing: border-box;
+    height: 110px;
+    padding: 6px;
+    border: 1px solid #c7c7c7;
+    resize: vertical;
+    overflow: auto;
+}

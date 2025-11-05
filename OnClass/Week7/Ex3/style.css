@@ -3,6 +3,52 @@ h2 {
     color: green;
 }
 
-#last-name-input {
-    margin-right: 10%;
+.grid {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+input[type="text"] {
+    margin-left: 20px;
+    border-top: 2px solid #727272;
+    border-left: 2px solid #727272;
+    border-right: 1px solid #727272;
+    border-bottom: 1px solid #727272;
+
+}
+
+.submit-input {
+    padding: 10px 2px;
+    display: flex;
+    gap: 24px;
+}
+
+.box-choices {
+    display: flex;
+    gap: 24px;
+}
+
+.durations {
+    display: flex;
+    gap: 24px;
+}
+
+.radios {
+    flex: 1 1 100%;
+}
+
+.address {
+    flex: 1 1 100%;
+
+}
+
+.radios > label {
+    display: inline-flex;
+    gap: 5px;
+}
+
+#female {
+    margin-left: 20px;
 }

@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Event</title>
+        <meta charset="UTF-8">
+        <script>
+            // var rollImage = new Image;
+            // rollImage.src = "/WebStudy/OnClass/Media/Image/melon-logo.jpg";
+            // var defaultImage = new Image;
+            // rollImage.src = "/WebStudy/OnClass/Media/Image/grape-logo.jpg";
+
+            // function showStyle(field) {
+            //     field.style.backgroundColor = 'yellow';
+            // }
+            
+            // function hideStyle(field) {
+            //     field.style.backgroundColor = 'red';
+            // }
+
+            // function setFontStyle(field) {
+            //     field.style.fontweight = 'bold';
+            //     field.style.fontFamily = 'Arial';
+            //     field.style.fontsize = '50px';
+            // }
+            function changeText(id) {
+                // id = document.getElementById(h1)
+                id.innerHTML = "Ooops!";
+            }
+        </script>
+    </head>
+    <body>
+        <!-- <a href="my_url" 
+        // onmouseover="document.my_image.src=rollImage.src" 
+        // onmouseout="document.my_image.src=defaultImage.src">
+        //     <img src="/WebStudy/OnClass/Media/Image/melon-logo.jpg" name="my_image" width=100 height=100>
+        // </a> -->
+
+        <!-- <form method="post" name="form1">
+            Name: <input type="text" name="txt_name" onfocus="showStyle(this)" onblur="hideStyle(this)" onselect="setFontStyle(this)">
+            E-mail: <input type="text" name="txt_email" onfocus="showStyle(this)" onblur="hideStyle(this)" onselect="setFontStyle(this)">
+            Comment: <textarea name="txt_comment" rows="4" onfocus="showStyle(this)" onblur="hideStyle(this)" onselect="setFontStyle(this)"></textarea>
+            <input type="submit" name="submit" value="Submit">
+            <input type="reset" name="submit2" value="Reset">
+            <button>reset</button>
+        </form> -->
+
+        <h1 onclick="changeText(this)">Click on this text !</h1>
+    </body>
+</html>

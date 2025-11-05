@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8" />
+<title>Personal Information</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<form>
+  <fieldset>
+    <legend>Personal Information</legend>
+
+    <div class="grid">
+      <!-- Row: Last/First name -->
+      <label>Last Name:</label>
+      <input id="last" name="last" type="text" value="Ho Va">
+
+      <div></div> <!-- khoảng trống giữa 2 cột -->
+
+      <label for="first">First Name:</label>
+      <input id="first" name="first" type="text" value="Ten">
+
+      <!-- Row: Gender radios -->
+      <div class="radios">
+        <label><input type="radio" name="gender" value="m" checked> Male</label>
+        <label><input type="radio" name="gender" value="f"> Female</label>
+      </div>
+
+      <!-- Row: Address -->
+      <div class="address-label"><label for="addr">Address:</label></div>
+      <textarea id="addr" name="address">somewhere in Hanoi
+somewhere in Hanoi
+somewhere in Hanoi</textarea>
+    </div>
+
+  </fieldset>
+</form>
+
+</body>
+</html>
