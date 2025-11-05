@@ -1,0 +1,28 @@
+<!doctype html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex4</title>
+    <link rel="stylesheet" href="style.css">
+    <script language = "JavaScript">
+        var winObject
+        function newWindow() {
+            winObject = window.open("test.html", "test", "width=500, height=500, resizeable=yes, scrollbars=yes, location=yes")
+            window.focus()
+        }
+
+        function closeWindow() {
+            winObject.close()
+        }
+    </script>
+</head>
+<body bgcolor="lightblue">
+    <h2>Demo with window.open()</h2>
+    <h3>Click here to open the test.html</h3>
+    <a href="javascript:newWindow()">Open the test.html in a new window</a>
+    <p>When you are ready to close the window, click here</p>
+    <a href="javascript:closeWindow()">Close the test.html window</a>
+</body>
+</html>

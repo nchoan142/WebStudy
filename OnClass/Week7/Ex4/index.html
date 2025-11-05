@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Máy tính đơn giản</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="calculator-container">
+        <h2>Máy tính</h2>
+        
+        <form id="calculator-form" onsubmit="return false;">
+            
+            <div class="form-group">
+                <label for="num1">Số thứ nhất:</label>
+                <input type="text" id="num1" placeholder="Nhập số từ 1-100">
+            </div>
+            
+            <div class="form-group">
+                <label for="num2">Số thứ hai:</label>
+                <input type="text" id="num2" placeholder="Nhập số từ 1-100">
+            </div>
+            
+            <div class="form-group">
+                <label for="result">Kết quả:</label>
+                <input type="text" id="result" readonly>
+            </div>
+            
+            <div class="button-group">
+                <button type="button" onclick="performAddition()">Cộng</button>
+                <button type="button" onclick="performSubtraction()">Trừ</button>
+                <button type="button" onclick="performMultiplication()">Nhân</button>
+                <button type="button" onclick="performDivision()">Chia</button>
+                <button type="button" class="clear-btn" onclick="clearFields()">Xóa trắng</button>
+            </div>
+            
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

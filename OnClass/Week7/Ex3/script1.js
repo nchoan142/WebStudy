@@ -84,10 +84,12 @@ processBtn.addEventListener('click', function(event) {
         // Nối các cái còn lại bằng dấu phẩy
         let firstMagazines = selectedMagazines.slice(0, -1).join(', ');
         magazineString = `${firstMagazines} and ${lastMagazine}`;
+        // console.log(magazineString)
     }
     
     // Tạo thông điệp xác nhận
-    const confirmMsg = `Do you want to order ${magazineString} magazins for ${selectedDuration.toLowerCase()} and to pay with ${selectedPayment.toLowerCase()}?`;
+    const confirmMsg = `Do you want to order ${magazineString} magazins for ${selectedDuration.toLowerCase()} 
+                        and to pay with ${selectedPayment.toLowerCase()}?`;
 
     // Hiển thị hộp thoại confirm và chờ người dùng bấm OK/Cancel
     const userConfirmed = confirm(confirmMsg);

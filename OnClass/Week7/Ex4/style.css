@@ -1,0 +1,97 @@
+/* Cài đặt chung cho trang */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Container chính cho máy tính */
+.calculator-container {
+    background-color: #ffffff;
+    padding: 25px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 320px;
+}
+
+/* Tiêu đề "Máy tính" */
+h2 {
+    text-align: center;
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+/* Nhóm cho mỗi cặp label và input */
+.form-group {
+    margin-bottom: 15px;
+}
+
+/* Style cho các nhãn (label) */
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+/* Style cho các ô nhập liệu (input) */
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box; /* Giúp padding không làm vỡ layout */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+/* Style riêng cho ô kết quả (không cho phép sửa) */
+.form-group input#result {
+    background-color: #e9ecef; /* Màu xám nhạt */
+    font-weight: bold;
+    color: #0056b3; /* Màu xanh cho kết quả nổi bật */
+}
+
+/* Nhóm các nút bấm */
+.button-group {
+    display: grid;
+    /* Chia 2 cột đều nhau */
+    grid-template-columns: 1fr 1fr;
+    gap: 10px; /* Khoảng cách giữa các nút */
+    margin-top: 20px;
+}
+
+/* Style chung cho các nút */
+.button-group button {
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+/* Màu cho các nút phép tính */
+.button-group button:not(.clear-btn) {
+    background-color: #007bff;
+}
+
+.button-group button:not(.clear-btn):hover {
+    background-color: #0056b3;
+}
+
+/* Màu cho nút "Xóa trắng" */
+.clear-btn {
+    background-color: #dc3545;
+    /* Nút này chiếm trọn 2 cột */
+    grid-column: 1 / -1; 
+}
+
+.clear-btn:hover {
+    background-color: #c82333;
+}
