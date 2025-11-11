@@ -1,0 +1,125 @@
+h2 {
+    text-align: center;
+    color: green;
+}
+
+.grid {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+input[type="text"] {
+    margin-left: 20px;
+    border-top: 2px solid #727272;
+    border-left: 2px solid #727272;
+    border-right: 1px solid #727272;
+    border-bottom: 1px solid #727272;
+
+}
+
+.submit-input {
+    padding: 10px 2px;
+    display: flex;
+    gap: 24px;
+}
+
+.box-choices {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap; /* Thêm wrap để xuống hàng nếu không đủ chỗ */
+}
+
+.durations {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap; /* Thêm wrap */
+}
+
+/* Thêm style cho payment-options (bị thiếu trong file gốc) */
+.payment-options {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.radios {
+    flex: 1 1 100%;
+}
+
+.address {
+    flex: 1 1 100%;
+
+}
+
+.radios > label {
+    display: inline-flex;
+    gap: 5px;
+}
+
+#female {
+    margin-left: 20px;
+}
+
+/* ============================================= */
+/* --- PHẦN RESPONSIVE ĐƯỢC THÊM VÀO --- */
+/* ============================================= */
+
+/* Áp dụng các style này khi chiều rộng màn hình <= 768px (ví dụ: tablet, mobile) */
+@media (max-width: 768px) {
+    
+    /* Chuyển các nhóm flex chính sang bố cục cột dọc */
+    .grid,
+    .box-choices,
+    .durations,
+    .payment-options {
+        flex-direction: column; /* Xếp chồng lên nhau */
+        gap: 15px; /* Giảm khoảng cách một chút */
+    }
+
+    /* Các nút Process/Reset cũng xếp dọc và kéo dài 100% */
+    .submit-input {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .submit-input input[type="submit"] {
+        width: 100%;
+        padding: 10px; /* Thêm padding cho dễ bấm trên mobile */
+        box-sizing: border-box; /* Quan trọng: để padding không làm vỡ layout width 100% */
+    }
+
+    /* Xử lý các trường text input */
+    input[type="text"] {
+        margin-left: 0; /* Bỏ margin-left cứng */
+        width: 100%; /* Kéo dài 100% */
+        padding: 8px; /* Thêm padding cho dễ nhìn */
+        box-sizing: border-box; 
+    }
+    
+    /* Làm cho các label First Name/Last Name xếp dọc */
+    .grid > label {
+        width: 100%;
+        display: flex;
+        flex-direction: column; /* Cho chữ "First Name" nằm trên input */
+        gap: 5px;
+    }
+
+    /* Xếp "Male" và "Female" chồng lên nhau */
+    .radios {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #female {
+        margin-left: 0; /* Bỏ margin-left khi đã xếp dọc */
+    }
+
+    /* Đảm bảo textarea cũng co giãn 100% */
+    textarea {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}

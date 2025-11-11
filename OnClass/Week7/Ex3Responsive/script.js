@@ -15,7 +15,7 @@ const paymentRadios = document.querySelectorAll('input[name="payment_option"]');
 // --- 2. Gán sự kiện cho nút "Process" ---
 processBtn.addEventListener('click', function(event) {
     // Ngăn hành vi "submit" mặc định của nút (tải lại trang)
-    event.preventDefault();     
+    event.preventDefault(); 
     
     // --- A. VALIDATION (Kiểm tra dữ liệu) ---
     let errors = [];
