@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revision</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Subscription Form</h2>
+    <div class="information border">
+        Personal Information
+        <table>
+            <tr>
+                <td>Last Name:</td>
+                <td>
+                    <input type="text" name="last_name" value="">
+                </td>
+                <td>First Name:</td>
+                <td>
+                    <input type="text" name="first_name" value="">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="radio" name="gender" value="Male">
+                    Male
+                </td>
+                <td>
+                    <input type="radio" name="gender" value="Female">
+                    Female
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Address:
+                </td>
+                <td>
+                    <textarea name="address" rows="5" cols="25"></textarea>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="magazines margin border">
+        <table>
+            <tr>Margazines subsription for</tr>
+            <tr>
+                <td>
+                    <input type="checkbox" name="magazine" value="Time">
+                    Time
+                </td>
+                <td>
+                    <input type="checkbox" name="magazine" value="Newsweek">
+                    Newsweek
+                </td>
+                <td>
+                    <input type="checkbox" name="magazine" value="Sunday">
+                    Sunday
+                </td>
+                <td>
+                    <input type="checkbox" name="magazine" value="Vogue">
+                    Vogue
+                </td>
+                <td>
+                    <input type="checkbox" name="magazine" value="People">
+                    People
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="duration margin border">
+        <table>
+            <tr>Duration</tr>
+            <tr>
+                <td>
+                    <input type="radio" name="duration" value=1>
+                    1 Year
+                </td>
+                <td>
+                    <input type="radio" name="duration" value=3>
+                    3 Years
+                </td>
+                <td>
+                    <input type="radio" name="duration" value=5>
+                    5 Years
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="payment margin border">
+        <table>
+            <tr>
+                Payment options
+            </tr>
+            <tr>
+                <td>
+                    <input type="radio" name="payment" value="Demand Draft">
+                    Demand Draft
+                </td>
+                <td>
+                    <input type="radio" name="payment" value="Credit Card">
+                    Credit Card
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="button margin">
+        <table>
+            <tr>
+                <td>
+                    <input type="submit" name="process" value="Proess">
+                </td>
+                <td>
+                    <input type="submit" name="reset" value="Reset">
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

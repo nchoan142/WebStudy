@@ -1,0 +1,163 @@
+/* Cài đặt chung */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.form-container {
+    width: 100%;
+    max-width: 900px;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* Tiêu đề */
+h1 {
+    color: #d9534f; /* Màu đỏ cam */
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 28px;
+}
+
+h2 {
+    font-size: 20px;
+    color: #333;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.required {
+    color: #d9534f;
+    font-weight: bold;
+}
+
+/* Lưới Form */
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px 30px; /* 20px khoảng cách dọc, 30px khoảng cách ngang */
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Kiểu Form Chung */
+label {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+input[type="text"],
+input[type="email"],
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    background-color: #fdfdfd;
+}
+
+input:focus,
+select:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0,123,255,0.25);
+}
+
+/* Các nhóm đặc biệt */
+.checkbox-group {
+    flex-direction: row;
+    align-items: center;
+    margin-top: 10px; /* Căn chỉnh với label bên cạnh */
+}
+
+.checkbox-group input {
+    width: auto;
+    margin-right: 8px;
+}
+
+.checkbox-group label {
+    margin-bottom: 0;
+    font-weight: normal;
+}
+
+.date-group,
+.phone-group {
+    display: flex;
+    gap: 10px;
+}
+
+.date-group select {
+    flex: 1;
+}
+
+.phone-group select {
+    flex-basis: 100px; /* Độ rộng cố định cho mã vùng */
+}
+
+.phone-group input {
+    flex: 2; /* Input SĐT rộng hơn */
+}
+
+.note {
+    font-size: 12px;
+    color: #555;
+    font-style: italic;
+    margin-top: 10px;
+}
+
+/* Trạng thái Vô hiệu hóa (cho em bé) */
+input:disabled,
+select:disabled {
+    background-color: #e9ecef;
+    cursor: not-allowed;
+}
+
+/* Nút Submit */
+.form-footer {
+    text-align: right;
+    margin-top: 30px;
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+}
+
+.submit-btn {
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #c9302c;
+}
+
+/* Responsive cho thiết bị di động */
+@media (max-width: 768px) {
+    .form-grid {
+        grid-template-columns: 1fr; /* 1 cột trên di động */
+    }
+}

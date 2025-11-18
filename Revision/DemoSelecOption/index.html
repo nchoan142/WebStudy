@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Ví dụ Select Option</title>
+</head>
+<body>
+
+    <h2>Bạn đi làm bằng gì?</h2>
+
+    <label for="transport-select">Chọn phương tiện:</label>
+
+    <select name="transport" id="transport-select">
+        <option value="">--- Vui lòng chọn ---</option>
+        <option value="car">Xe hơi</option>
+        <option value="bike">Xe máy</option>
+        <option value="bus">Xe buýt</option>
+        <option value="walk">Đi bộ</option>
+    </select>
+
+    <p id="display-text">Lựa chọn của bạn: <strong id="result">...</strong></p>
+
+    <input type="submit" name="submit" value="submit">
+
+    <script src="script.js"></script>
+</body>
+</html>

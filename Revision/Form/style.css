@@ -1,0 +1,15 @@
+h2 {
+    text-align: center;
+}
+
+.border {
+    border: solid gray 1px;
+}
+
+.margin {
+    margin-top: 20px;
+}
+
+input[type="submit"] {
+    margin-left: 20px;
+}
